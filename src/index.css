@@ -20,7 +20,7 @@ h1 {
 
 .layout__content {
   display: flex;
-  min-height: calc(100vh - 20px);
+  min-height: calc(100vh - 20px - 80px);
   gap: 5px;
   margin: 10px
 }
