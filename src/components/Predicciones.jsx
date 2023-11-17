@@ -3,7 +3,7 @@ import jugadores from "../data/jugadores.json";
 import Partidos from "./Partidos";
 
 export default function Predicciones() {
-    const [jugadorSeleccionado, setJugadorSeleccionado] = useState();
+    const [jugadorSeleccionado, setJugadorSeleccionado] = useState('ALE');
 
     function handleOnChange(e) {
         setJugadorSeleccionado(e.target.value);

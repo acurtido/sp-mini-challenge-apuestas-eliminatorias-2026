@@ -5,11 +5,11 @@ export default function Tabla() {
     const puntos = obtenerTabla(eliminatoriasJSON);
 
     return (<div className="container">
-        <table border="1">
+        <table border="1" style={{textAlign: 'center'}}>
             <thead>
                 <tr>
-                    <th>Usuario</th>
-                    <th>Puntos</th>
+                    <th style={{width: 80}}>Usuario</th>
+                    <th style={{width: 60}}>Puntos</th>
                 </tr>
             </thead>
             <tbody>
