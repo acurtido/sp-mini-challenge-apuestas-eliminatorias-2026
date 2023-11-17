@@ -1,0 +1,146 @@
+[
+    {
+        "partidoId": 1,
+        "equipos": {
+            "local": "AR",
+            "visitante": "UY"
+        },
+        "resultadoReal": {
+            "golesLocal": 0,
+            "golesVisitante": 2
+        },
+        "prediccionesUsuarios": [
+            {
+                "usuarioId": "ALE",
+                "prediccion": {
+                    "golesLocal": 1,
+                    "golesVisitante": 1
+                }
+            },
+            {
+                "usuarioId": "HEC",
+                "prediccion": {
+                    "golesLocal": 0,
+                    "golesVisitante": 2
+                }
+            },
+            {
+                "usuarioId": "MAR",
+                "prediccion": {
+                    "golesLocal": 4,
+                    "golesVisitante": 1
+                }
+            },
+            {
+                "usuarioId": "PAB",
+                "prediccion": {
+                    "golesLocal": 2,
+                    "golesVisitante": 0
+                }
+            },
+            {
+                "usuarioId": "FEP",
+                "prediccion": {
+                    "golesLocal": 1,
+                    "golesVisitante": 2
+                }
+            }
+        ]
+    },
+    {
+        "partidoId": 2,
+        "equipos": {
+            "local": "CH",
+            "visitante": "PY"
+        },
+        "resultadoReal": {
+            "golesLocal": 0,
+            "golesVisitante": 0
+        },
+        "prediccionesUsuarios": [
+            {
+                "usuarioId": "ALE",
+                "prediccion": {
+                    "golesLocal": 1,
+                    "golesVisitante": 3
+                }
+            },
+            {
+                "usuarioId": "HEC",
+                "prediccion": {
+                    "golesLocal": 0,
+                    "golesVisitante": 1
+                }
+            },
+            {
+                "usuarioId": "MAR",
+                "prediccion": {
+                    "golesLocal": 0,
+                    "golesVisitante": 1
+                }
+            },
+            {
+                "usuarioId": "PAB",
+                "prediccion": {
+                    "golesLocal": 0,
+                    "golesVisitante": 1
+                }
+            },
+            {
+                "usuarioId": "FEP",
+                "prediccion": {
+                    "golesLocal": 0,
+                    "golesVisitante": 2
+                }
+            }
+        ]
+    },
+    {
+        "partidoId": 3,
+        "equipos": {
+            "local": "CO",
+            "visitante": "BR"
+        },
+        "resultadoReal": {
+            "golesLocal": 2,
+            "golesVisitante": 1
+        },
+        "prediccionesUsuarios": [
+            {
+                "usuarioId": "ALE",
+                "prediccion": {
+                    "golesLocal": 2,
+                    "golesVisitante": 0
+                }
+            },
+            {
+                "usuarioId": "HEC",
+                "prediccion": {
+                    "golesLocal": 0,
+                    "golesVisitante": 1
+                }
+            },
+            {
+                "usuarioId": "MAR",
+                "prediccion": {
+                    "golesLocal": 2,
+                    "golesVisitante": 1
+                }
+            },
+            {
+                "usuarioId": "PAB",
+                "prediccion": {
+                    "golesLocal": 0,
+                    "golesVisitante": 1
+                }
+            },
+            {
+                "usuarioId": "FEP",
+                "prediccion": {
+                    "golesLocal": 1,
+                    "golesVisitante": 1
+                }
+            }
+        ]
+    }
+]

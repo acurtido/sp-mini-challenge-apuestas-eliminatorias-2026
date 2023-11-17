@@ -1,0 +1,34 @@
+[
+    {
+        "id": "ALE",
+        "nombre": "Alex"
+    },
+    {
+        "id": "FEL",
+        "nombre": "Felipe"
+    },
+    {
+        "id": "HEC",
+        "nombre": "Héctor"
+    },
+    {
+        "id": "MAR",
+        "nombre": "Martina"
+    },
+    {
+        "id": "PAB",
+        "nombre": "Pablo"
+    },
+    {
+        "id": "SEB",
+        "nombre": "Sebastián"
+    },
+    {
+        "id": "GAS",
+        "nombre": "Gastón"
+    },
+    {
+        "id": "MAT",
+        "nombre": "Mateo"
+    }
+]
