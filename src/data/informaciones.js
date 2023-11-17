@@ -1,4 +1,5 @@
 import jugadores from '../data/jugadores.json'
+import selecciones from '../data/selecciones.json'
 
 function calcularPuntosPorPartido(resultadoReal, prediccion) {
     if (!prediccion) {
@@ -23,21 +24,21 @@ function calcularPuntosPorPartido(resultadoReal, prediccion) {
     return puntos
 }
 
+function obtenerNombrePorId(data, id) {
+    const item = data.find(element => element.id === id)
+    return item ? item.nombre : null
+}
+
 function obtenerPartidosPorJugador(eliminatorias, jugadorId) {
     return eliminatorias.map(partido => {
         const prediccion = partido.prediccionesUsuarios.find(prediccion => prediccion.usuarioId === jugadorId)
         return {
             partidoId: partido.partidoId,
-            equipos: partido.equipos,
+            equipos: { local: obtenerNombrePorId(selecciones, partido.equipos.local), visitante: obtenerNombrePorId(selecciones, partido.equipos.visitante) },
             prediccion: prediccion ? prediccion.prediccion : null,
             puntos: calcularPuntosPorPartido(partido.resultadoReal, prediccion)
         }
     }).filter(partido => partido.prediccion !== null)
-}
-
-function obtenerNombrePorId(id) {
-    const item = jugadores.find(element => element.id === id)
-    return item ? item.nombre : null
 }
 
 function obtenerTabla(eliminatorias) {
@@ -52,7 +53,7 @@ function obtenerTabla(eliminatorias) {
         })
     })
     const lista = Object.keys(puntosUsuarios).map(key => {
-        return { nombre: obtenerNombrePorId(key), puntos: puntosUsuarios[key] }
+        return { nombre: obtenerNombrePorId(jugadores, key), puntos: puntosUsuarios[key] }
     })
     return lista.sort((a, b) => b.puntos - a.puntos)
 }
