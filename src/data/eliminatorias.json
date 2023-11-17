@@ -39,7 +39,7 @@
                 }
             },
             {
-                "usuarioId": "FEP",
+                "usuarioId": "FEL",
                 "prediccion": {
                     "golesLocal": 1,
                     "golesVisitante": 2
@@ -87,7 +87,7 @@
                 }
             },
             {
-                "usuarioId": "FEP",
+                "usuarioId": "FEL",
                 "prediccion": {
                     "golesLocal": 0,
                     "golesVisitante": 2
@@ -135,7 +135,7 @@
                 }
             },
             {
-                "usuarioId": "FEP",
+                "usuarioId": "FEL",
                 "prediccion": {
                     "golesLocal": 1,
                     "golesVisitante": 1

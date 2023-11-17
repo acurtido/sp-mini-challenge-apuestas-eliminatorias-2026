@@ -1,18 +1,21 @@
+import { useState } from "react";
 import jugadores from "../data/jugadores.json";
-import eliminatoriasJSON from "../data/eliminatorias.json";
-import { obtenerPartidosPorJugador } from "../data/informaciones";
+import Partidos from "./Partidos";
 
 export default function Predicciones() {
-    const partidosPorJugador = obtenerPartidosPorJugador(eliminatoriasJSON, 'HEC');
-    console.log(partidosPorJugador);
+    const [jugadorSeleccionado, setJugadorSeleccionado] = useState();
+
+    function handleOnChange(e) {
+        setJugadorSeleccionado(e.target.value);
+    }
+
     return <div className="container">
-        <label htmlFor="participantes">Selecciones:</label>
-        <br />
-        <select id="participantes">
+        <label htmlFor="participantes">Predicciones: </label>
+        <select id="participantes" onChange={(e) => handleOnChange(e)}>
             {jugadores.map(function (data) {
                 return <option key={data.id} value={data.id}>{data.nombre}</option>
             })}
         </select>
-
+        <Partidos jugador={jugadorSeleccionado}/>
     </div>;
 }

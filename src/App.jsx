@@ -1,12 +1,15 @@
-import './App.css'
 import Tabla from './components/Tabla'
 import Predicciones from './components/Predicciones'
+import Titulo from './components/Titulo'
 
 function App() {
   return (
     <div className='layout'>
-      <Predicciones />
-      <Tabla />
+      <Titulo />
+      <div className='layout__content'>
+        <Predicciones />
+        <Tabla />
+      </div>
     </div>
   )
 }
